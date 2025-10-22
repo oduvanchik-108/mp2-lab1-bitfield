@@ -20,6 +20,8 @@ set(MP2_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 include_directories("${MP2_INCLUDE}" gtest)
 
+add_compile_definitions(_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING)
+
 # BUILD
 add_subdirectory(src)
 add_subdirectory(samples)
